@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "empregister-a010d": {
+      "hosting": {
+        "emp-register": [
+          "empregister-a010d"
+        ]
+      }
+    }
+  }
+}
