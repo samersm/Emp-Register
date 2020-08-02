@@ -1,3 +1,17 @@
 <div class="container">
-    <p>employees works!</p>
+    <div class="row justify-content-center p-2">
+        <h1>Angular 9 with Firebase CRUD Application</h1>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="employeeName" placeholder="Enter Employee Name">
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control" [(ngModel)]="employeeAge" placeholder="Enter Employee Age">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="employeeAddress" placeholder="Enter Employee Address">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" [disabled]="!employeeName || !employeeAge || !employeeAddress">Create Employee</button>
+    </div>
 </div>
