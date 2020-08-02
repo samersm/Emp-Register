@@ -3,3 +3,4 @@ ng add @angular/fire
 ng g component pages/home
 ng g component pages/about
 ng g component employees
+ng g s services/employee
