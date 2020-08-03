@@ -12,6 +12,8 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { EmployeeComponent } from './employees/employee/employee.component';
+import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EmployeesComponent } from './employees/employees.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
