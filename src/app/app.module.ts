@@ -7,6 +7,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from './../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -29,6 +31,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule
