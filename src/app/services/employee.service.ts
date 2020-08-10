@@ -8,6 +8,10 @@ import { AngularFirestore } from '@angular/fire/firestore';
 export class EmployeeService {
   formData: Employee;
 
-  constructor(public fireservices: AngularFirestore) { }
+  constructor(public firestore: AngularFirestore) { }
+
+  getEmployees() {
+    return this.firestore.collection('employees').snapshotChanges();
+  }
 
 }
