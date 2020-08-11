@@ -20,8 +20,11 @@ export class EmployeeListComponent implements OnInit {
           id: item.payload.doc.id,
           ...item.payload.doc.data()
         } as Employee;
-      })
+      });
     });
   }
 
+  onEdit(emp: Employee) {
+    this.service.formData = Object.assign({}, emp);
+  }
 }
